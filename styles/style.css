@@ -5,6 +5,9 @@ font-family: 'Roboto', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
 /* common styles */
+*{
+    margin: 0;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
@@ -28,7 +31,6 @@ main {
     font-size: 24px;
     font-weight: 500;
     color: #562EFF;
-    margin: 0;
     margin-bottom: 30px;
 }
 
@@ -38,10 +40,6 @@ hr {
 }
 
 /* top players style */
-.top-players {
-    margin-bottom: 20px;
-}
-
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -87,7 +85,6 @@ hr {
 .blog-title {
     font-size: 20px;
     font-weight: 500;
-    margin: 0;
 }
 
 .blog-author {
@@ -105,16 +102,45 @@ hr {
 /* -----------------
     courses styles 
 ----------------------*/
+.latest-courses .section-title {
+    margin-bottom: 14px;
+}
 
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.course {
+    padding: 16px;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+}
 .course .course-banner img {
     width: 224px;
     height: 104px;
 }
 
+.course-title {
+    margin-top: 15px;
+    color: #1E1E1E;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.course-author {
+    margin-top: 6px;
+    color: #ED6B4F;
+    font-size: 15px;
+    font-weight: 400;
+}
+
 .course-info {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
     align-items: center;
-    justify-content: space-between;
+    margin-top: 15px;
+    /* justify-items: center; */
 }
 
 .fa-star {
@@ -127,4 +153,23 @@ hr {
 .fa-star.empty {
     color: #AEAEAE;
     opacity: 0.3;
+}
+
+.course-info .rating-rate {
+    color: #A2A2A2;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.course-duration {
+    color: #FF4A60;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #FFE4E8;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.fa-clock {
+    font-size: 16px;
 }
