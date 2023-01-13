@@ -1,7 +1,11 @@
-/* fonts */
+/* ------------
+    fonts
+--------------- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
-/* common styles */
+/*-----------------
+    common styles 
+-------------------*/
 * {
     margin: 0;
 }
@@ -15,14 +19,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .container {
     background-color: #FFFFFF;
-    width: 870px;
+    width: 65%;
     padding: 30px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .section-title {
@@ -37,7 +42,9 @@ hr {
     margin: 30px 0;
 }
 
-/* top players style */
+/* ------------------------
+    top players style
+--------------------------- */
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -118,8 +125,7 @@ hr {
 }
 
 .course .course-banner img {
-    width: 224px;
-    height: 104px;
+    width: 93%;
 }
 
 .course-title {
@@ -138,10 +144,10 @@ hr {
 
 .course-info {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 2fr 1fr 3fr;
     align-items: center;
+    justify-items: center;
     margin-top: 15px;
-    /* justify-items: center; */
 }
 
 .fa-star {
@@ -171,6 +177,7 @@ hr {
     padding: 7px;
     border-radius: 15px;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 .fa-clock {
@@ -187,13 +194,15 @@ hr {
 
 /* nobile devices */
 @media screen and (max-width:576px) {
-    .container {
-        width: 100%;
+    
+    main {
+        text-align: center;
     }
 
-    .players, .blogs, .courses {
+    .players,
+    .blogs,
+    .courses {
         grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
     }
 
     .blog {
@@ -203,11 +212,10 @@ hr {
 
 /* tablet devices */
 @media screen and (min-width:577px) and (max-width:992px) {
-    .container {
-        width: 100%;
-    }
 
-    .players, .blogs, .courses {
+    .players,
+    .blogs,
+    .courses {
         grid-template-columns: repeat(2, 1fr);
     }
 
